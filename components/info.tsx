@@ -18,7 +18,8 @@ const Info: React.FC<InfoProps> = ({ data }) => {
     cart.addItem(data);
   }
 
-  return ( 
+  return (
+    <> 
     <div>
       <h1 className="text-3xl font-bold text-gray-900">{data.name}</h1>
       <div className="mt-3 flex items-end justify-between">
@@ -28,16 +29,18 @@ const Info: React.FC<InfoProps> = ({ data }) => {
       </div>
       <hr className="my-4" />
       <div className="flex flex-col gap-y-6">
-        <div className="flex items-center gap-x-4">
+        {/* <div className="flex items-center gap-x-4">
           <h3 className="font-semibold text-black">Size:</h3>
           <div>
             {data?.size?.value}
           </div>
-        </div>
-        <div className="flex items-center gap-x-4">
+        </div> */}
+        {/* <div className="flex items-center gap-x-4">
           <h3 className="font-semibold text-black">Color:</h3>
           <div className="h-6 w-6 rounded-full border border-gray-600" style={{ backgroundColor: data?.color?.value }} />
-        </div>
+        </div> */}
+        <h1 className="text-lg font-bold">Details:</h1>
+        <p>details go brrrrrrrrrrrrrrrr</p>
       </div>
       <div className="mt-10 flex items-center gap-x-3">
         <Button onClick={onAddToCart} className="flex items-center gap-x-2">
@@ -46,6 +49,7 @@ const Info: React.FC<InfoProps> = ({ data }) => {
         </Button>
       </div>
     </div>
+  </>
   );
 }
  
