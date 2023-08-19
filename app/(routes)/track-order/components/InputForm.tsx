@@ -7,7 +7,6 @@ const InputForm = async (data: any) => {
   const orders = data.data;
   const orderId = "ed3f750f-4c8f-4fbe-9525-fa51d35edd3c";
   const [value, setValue] = useState("");
-  let orderstatus;
   function handleClick(e: any) {
     e.preventDefault();
     const inputId = inputRef.current?.value;

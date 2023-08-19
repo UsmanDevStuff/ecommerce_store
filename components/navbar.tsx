@@ -21,8 +21,12 @@ const Navbar = async () => {
           </div>
         </Container>
       </div>
-      <div className="py-5 flex border-b">
-        <MainNav data={categories} />
+      <div className="border-b">
+        <Container>
+          <div className="py-5 flex">
+            <MainNav data={categories} />
+          </div>
+        </Container>
       </div>
     </>
   );
