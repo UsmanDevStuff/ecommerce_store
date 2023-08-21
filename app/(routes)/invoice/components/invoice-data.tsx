@@ -9,6 +9,7 @@ const InvoiceData = (data: any) => {
   }
   var orderbyid = orders.find(getorderid);
   console.log(orderbyid);
+  const orderid = orderbyid.orderId;
   const email = orderbyid.email;
   const phone = orderbyid.phone;
   const address = orderbyid.address;
@@ -19,6 +20,7 @@ const InvoiceData = (data: any) => {
     <div>
       <Container>
         <div>
+          <h1>Order Id : {orderid} (be sure to copy it)</h1>
           <h1>Email : {email}</h1>
           <h1>Phone : {phone}</h1>
           <h1>Address : {address}</h1>
