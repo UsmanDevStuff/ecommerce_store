@@ -1,4 +1,11 @@
 import Container from "@/components/ui/container";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 
 const InvoiceData = (data: any) => {
   const orderId = "ed3f750f-4c8f-4fbe-9525-fa51d35edd3c"; //test
@@ -17,19 +24,46 @@ const InvoiceData = (data: any) => {
   const orderstatus = orderbyid.orderStatus;
 
   return (
-    <div>
+    <div className="grid justify-center">
       <Container>
-        <div>
-          <h1>Order Id : {orderid} (be sure to copy it)</h1>
-          <h1>Email : {email}</h1>
-          <h1>Phone : {phone}</h1>
-          <h1>Address : {address}</h1>
-          {ispaid ? (
-            <h1>Is Paid : Payment Completed</h1>
-          ) : (
-            <h1>Is Paid : Payment not completed</h1>
-          )}
-          <h1>Order Status : {orderstatus}</h1>
+        <div className="max-w-md my-10">
+          <Card>
+            <CardHeader>
+              <CardTitle>Your Order Invoice</CardTitle>
+              <CardDescription>
+                <span className="font-semibold">Note:</span> Be sure to copy
+                your order id and save it, So you will be able to track your
+                order.
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <CardDescription className="font-bold">
+                Order Id : <span className="font-light">{orderid}</span>
+              </CardDescription>
+              <CardDescription className="font-bold">
+                Email : <span className="font-light">{email}</span>
+              </CardDescription>
+              <CardDescription className="font-bold">
+                Phone : <span className="font-light">{phone}</span>
+              </CardDescription>
+              <CardDescription className="font-bold">
+                Address : <span className="font-light">{address}</span>
+              </CardDescription>
+              {ispaid ? (
+                <CardDescription className="font-bold">
+                  Is Paid :{" "}
+                  <span className="font-light">Payment Successful</span>
+                </CardDescription>
+              ) : (
+                <CardDescription className="font-bold">
+                  Is Paid : <span className="font-light">Payment</span>
+                </CardDescription>
+              )}
+              <CardDescription className="font-bold">
+                Order Status : <span className="font-light">{orderstatus}</span>
+              </CardDescription>
+            </CardContent>
+          </Card>
         </div>
       </Container>
     </div>

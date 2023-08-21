@@ -28,7 +28,6 @@ const ShowInvoice = (data: any) => {
   return (
     <div>
       <Container>
-        <h1>Invoice</h1>
         {searchParams.get("success") ? (
           <InvoiceData data={orders} id={id} />
         ) : null}
