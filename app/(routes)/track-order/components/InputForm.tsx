@@ -1,6 +1,17 @@
 "use client";
 import React from "react";
 import { useRef, useState } from "react";
+import {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardContent,
+  CardFooter,
+  CardDescription,
+} from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import Button from "@/components/ui/button";
+import Container from "@/components/ui/container";
 
 const InputForm = async (data: any) => {
   const inputRef = useRef<HTMLInputElement>(null);
@@ -26,17 +37,37 @@ const InputForm = async (data: any) => {
     return orderstatus;
   }
   return (
-    <div className="border border-solid border-black rounded-md flex justify-center">
-      <form className="flex flex-col w-1/2">
-        <label htmlFor="">Enter Your Order Id</label>
-        <input
+    <Container>
+      <div className="grid justify-center">
+        <Card className="w-[360px] md:w-[420px]">
+          <form>
+            <CardHeader className="grid justify-center">
+              <CardTitle>Enter Your Order Id...</CardTitle>
+            </CardHeader>
+            <CardContent className="grid">
+              <Input
+                ref={inputRef}
+                name="state"
+                type="text"
+                placeholder="Your Order Id ....."
+              />
+              <Button className="mt-2" onClick={handleClick}>
+                Track Order
+              </Button>
+            </CardContent>
+            <CardFooter>
+              <h1 className="font-bold">
+                Order Status : <span className="font-light">{value}</span>
+              </h1>
+            </CardFooter>
+            {/* <input
           className="border border-solid border-gray-600"
           ref={inputRef}
           name="state"
           type="text"
           //onChange={(e) => setState(e.target.value)}
-        />
-        <button
+        /> */}
+            {/* <button
           className="m-4 border border-solid border-black bg-black text-white w-16"
           onClick={handleClick}
         >
@@ -44,9 +75,11 @@ const InputForm = async (data: any) => {
         </button>
         <div>
           <h1>Order Status : {value}</h1>
-        </div>
-      </form>
-    </div>
+        </div> */}
+          </form>
+        </Card>
+      </div>
+    </Container>
   );
 };
 

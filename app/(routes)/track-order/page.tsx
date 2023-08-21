@@ -2,13 +2,14 @@ import getBillboard from "@/actions/get-billboard";
 import Billboard from "@/components/ui/billboard";
 import Container from "@/components/ui/container";
 import InputForm from "./components/InputForm";
+import { Card } from "@/components/ui/card";
 import getOrders from "@/actions/get-orders";
 
 export const revalidate = 0;
 
 const TrackOrderPage = async () => {
   const orders = await getOrders();
-  const billboard = await getBillboard("23835991-39d3-4878-ae86-e91586eb75b6");
+  const billboard = await getBillboard("bd0e2fc7-30d8-4c62-a417-a2e6cb6e84a8");
   console.log(orders);
   return (
     <Container>
