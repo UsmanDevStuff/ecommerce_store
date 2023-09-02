@@ -23,10 +23,10 @@ const NavbarActions = () => {
   }
 
   return (
-    <div className="ml-auto flex items-center gap-x-4">
+    <div className="ml-auto flex items-center gap-x-2">
       <Button
         onClick={() => router.push("/cart")}
-        className="flex items-center rounded-full bg-black px-4 py-2"
+        className="flex items-center rounded-full bg-black px-[10px] py-[6px]"
       >
         <ShoppingBag size={20} color="white" />
         <span className="ml-2 text-sm font-medium text-white">
@@ -35,7 +35,7 @@ const NavbarActions = () => {
       </Button>
       <Button
         onClick={() => router.push("/track-order")}
-        className="flex items-center rounded-full bg-black px-4 py-2"
+        className="flex items-center rounded-full bg-black px-[10px] py-[6px]"
       >
         <CarIcon size={20} color="white" />
         <span className="ml-2 text-sm font-medium text-white">Track</span>
