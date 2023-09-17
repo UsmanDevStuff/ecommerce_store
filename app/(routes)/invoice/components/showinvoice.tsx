@@ -74,7 +74,7 @@ const ShowInvoice = (data: any) => {
     <Document>
       <Page size="A4">
         <View>
-          <Text style={styles.heading}>ShopTegic Customer Invoice</Text>
+          <Text style={styles.heading}>EllisMart Customer Invoice</Text>
         </View>
         <View style={styles.flex}>
           <Text style={styles.primary}>Order Id :</Text>
