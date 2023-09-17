@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.7.15",
+    "@react-pdf/renderer": "^3.1.12",
     "@types/node": "20.2.5",
     "@types/react": "18.2.9",
     "@types/react-dom": "18.2.4",
@@ -20,6 +21,8 @@
     "date-fns": "^2.30.0",
     "eslint": "8.42.0",
     "eslint-config-next": "13.4.4",
+    "jspdf": "^2.5.1",
+    "jspdf-autotable": "^3.6.0",
     "lucide-react": "^0.241.0",
     "next": "^13.4.5",
     "postcss": "8.4.24",

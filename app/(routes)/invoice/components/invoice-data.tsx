@@ -20,7 +20,7 @@ const InvoiceData = (data: any) => {
   const address = orderbyid.address;
   const ispaid = orderbyid.isPaid;
   const orderstatus = orderbyid.orderStatus;
-
+  //className="grid justify-center"
   return (
     <div className="grid justify-center">
       <Container>
