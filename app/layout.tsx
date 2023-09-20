@@ -1,26 +1,28 @@
-import { Urbanist } from 'next/font/google'
+import { Urbanist } from "next/font/google";
 
-import ModalProvider from '@/providers/modal-provider'
-import ToastProvider from '@/providers/toast-provider'
-import Navbar from '@/components/navbar'
-import Footer from '@/components/footer'
+import ModalProvider from "@/providers/modal-provider";
+import ToastProvider from "@/providers/toast-provider";
+import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
+import { CrispProvider } from "@/components/crisp-provider";
 
-import './globals.css'
+import "./globals.css";
 
-const font = Urbanist({ subsets: ['latin'] })
+const font = Urbanist({ subsets: ["latin"] });
 
 export const metadata = {
-  title: 'ShopTegic',
-  description: 'ShopTegic - The place for all your purchases.',
-}
+  title: "EllisMart",
+  description: "EllisMart - The place for all your purchases.",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
+      <CrispProvider />
       <body className={font.className}>
         <ToastProvider />
         <ModalProvider />
@@ -29,5 +31,5 @@ export default function RootLayout({
         <Footer />
       </body>
     </html>
-  )
+  );
 }
