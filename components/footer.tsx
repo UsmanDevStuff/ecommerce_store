@@ -25,7 +25,7 @@ const Footer = () => {
                       className="text-blueGray-600 hover:text-blueGray-800 block pb-2 text-sm"
                       href="/about"
                     >
-                      About Us
+                      About
                     </a>
                   </li>
                   <li>
@@ -33,7 +33,7 @@ const Footer = () => {
                       className="text-blueGray-600 hover:text-blueGray-800 block pb-2 text-sm"
                       href="/contact"
                     >
-                      Contact Us
+                      Contact
                     </a>
                   </li>
                 </ul>
