@@ -1,3 +1,6 @@
+import { Map } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
+
 const Footer = () => {
   return (
     <footer className="bg-white border-t">
@@ -58,6 +61,32 @@ const Footer = () => {
                     >
                       Privacy Policy
                     </a>
+                  </li>
+                </ul>
+              </div>
+              <div className="w-full lg:w-4/12 px-4 mt-3">
+                <span className="block uppercase text-blueGray-500 text-sm font-bold mb-2">
+                  Contact Info
+                </span>
+                <ul className="list-unstyled">
+                  <li>
+                    <p className="text-blueGray-600 hover:text-blueGray-800 flex flex-row items-center pb-2 text-sm">
+                      <Mail className="mr-1" size={15} />
+                      contact@ellismart.com
+                    </p>
+                  </li>
+                  <li>
+                    <p className="text-blueGray-600 hover:text-blueGray-800  flex flex-row items-center pb-2 text-sm">
+                      <Phone className="mr-1" size={15} />
+                      +13473336370
+                    </p>
+                  </li>
+                  <li>
+                    <p className="text-blueGray-600 hover:text-blueGray-800  flex flex-row pb-2 text-sm">
+                      <MapPin className="mr-1 mt-1" size={15} />
+                      5900 BALCONES DR STE 100
+                      <br /> AUSTIN TX 78731-4298
+                    </p>
                   </li>
                 </ul>
               </div>
