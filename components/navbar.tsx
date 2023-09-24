@@ -15,7 +15,7 @@ const Navbar = async () => {
         <Container>
           <div className="relative px-4 sm:px-6 lg:px-8 flex h-16 items-center">
             <Link href="/" className="ml-4 flex lg:ml-0 gap-x-2">
-              <Image src={"/em-l-c.png"} alt="logo" height={49} width={95} />
+              <Image src={"/em-l-c.png"} alt="logo" height={59} width={115} />
               {/* <p className="font-extrabold text-2xl">EllisMart</p> */}
             </Link>
             {/* <MainNav data={categories} /> */}
