@@ -39,6 +39,14 @@ const Footer = () => {
                       Contact
                     </a>
                   </li>
+                  <li>
+                    <a
+                      className="text-blueGray-600 hover:text-blueGray-800 block pb-2 text-sm"
+                      href="/track-order"
+                    >
+                      Track Your Order
+                    </a>
+                  </li>
                 </ul>
               </div>
               <div className="w-full lg:w-4/12 px-4 mt-3">
