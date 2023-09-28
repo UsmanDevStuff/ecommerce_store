@@ -25,21 +25,20 @@ const NavbarActions = () => {
   return (
     <div className="ml-auto flex items-center gap-x-2">
       <Button
+        onClick={() => router.push("/track-order")}
+        className="flex items-center rounded-lg bg-black px-[10px] py-[6px]"
+      >
+        <CarIcon size={20} color="white" />
+      </Button>
+      <Button
         onClick={() => router.push("/cart")}
-        className="flex items-center rounded-full bg-black px-[10px] py-[6px]"
+        className="flex items-center rounded-lg bg-black px-[10px] py-[6px]"
       >
         <ShoppingBag size={20} color="white" />
         <span className="ml-2 text-sm font-medium text-white">
           {cart.items.length}
         </span>
       </Button>
-      {/* <Button
-        onClick={() => router.push("/track-order")}
-        className="flex items-center rounded-full bg-black px-[10px] py-[6px]"
-      >
-        <CarIcon size={20} color="white" />
-        <span className="ml-2 text-sm font-medium text-white">Track</span>
-      </Button> */}
     </div>
   );
 };
